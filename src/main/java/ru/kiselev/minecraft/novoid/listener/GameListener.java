@@ -16,10 +16,8 @@ public class GameListener implements Listener {
         final FileConfiguration configFile = plugin.getConfig();
 
         final Player player = event.getPlayer();
-        final int y = player.getLocation().getBlockY();
-        final Location spawn = player.getWorld().getSpawnLocation();
-        if (y < configFile.getInt("height")) {
-            player.teleport(spawn);
+        if (player.getLocation().getBlockY() < configFile.getInt("height")) {
+            player.teleport( player.getWorld().getSpawnLocation());
         }
     }
 }
