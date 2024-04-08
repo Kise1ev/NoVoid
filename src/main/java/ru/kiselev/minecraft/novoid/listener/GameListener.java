@@ -12,12 +12,9 @@ public class GameListener implements Listener {
 
     @EventHandler
     public void onPlayerMove(final PlayerMoveEvent event) {
-        final Plugin plugin = Plugin.getInstance();
-        final FileConfiguration configFile = plugin.getConfig();
-
         final Player player = event.getPlayer();
-        if (player.getLocation().getBlockY() < configFile.getInt("height")) {
-            player.teleport( player.getWorld().getSpawnLocation());
+        if (player.getLocation().getBlockY() < Plugin.getInstance().getConfig().getInt("height")) {
+            player.teleport(player.getWorld().getSpawnLocation());
         }
     }
 }
