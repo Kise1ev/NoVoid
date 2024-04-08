@@ -1,0 +1,8 @@
+chat:
+  prefix: "&7[&6NoVoid&7] "
+  command_not_found: "&cCommand not found!"
+command:
+  novoid:
+    reload:
+      message: "&aConfig has been successfully reloaded!"
+height: 0

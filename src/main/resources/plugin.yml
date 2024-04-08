@@ -1,0 +1,9 @@
+name: NoVoid
+main: ru.kiselev.minecraft.novoid.Plugin
+version: 1.0.0
+description: Protection from falling into the abyss
+author: Roman Kiselev
+commands:
+  novoid:
+    usage: /novoid reload
+    description: Reload config
